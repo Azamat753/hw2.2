@@ -3,8 +3,8 @@ public class Ninja  extends Anime implements Printable{
     private int chakra;
 
 
-    public Ninja(String name, int age,int attack,int chakra) {
-        super(name, age);
+    public Ninja(int attack,int chakra) {
+        setName("Нинздзя");
         this.attack = attack;
         this.chakra = chakra;
     }
@@ -21,7 +21,7 @@ public class Ninja  extends Anime implements Printable{
 
     @Override
     public String print() {
-        return(getName()+" "+" "+getAge()+" "+getAttack()+" "+getChakra());
+        return "Имя:"+getName()+"\n"+ "Атака:"+getAttack()+"\n" + "Чакра: "+getChakra();
     }
 
 }

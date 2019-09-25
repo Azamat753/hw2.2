@@ -1,9 +1,10 @@
-public class Konoha extends Ninja implements Printable{
+public class Konoha extends Anime implements Printable{
     private String clan;
     private String status;
 
-    public Konoha(String name, int age, int attack, int chakra, String clan, String status) {
-        super(name, age, attack, chakra);
+
+    public Konoha(String clan, String status) {
+        setName("Деревня: Коноха");
         this.clan = clan;
         this.status = status;
     }
@@ -15,6 +16,6 @@ public class Konoha extends Ninja implements Printable{
     }
     @Override
     public String print() {
-        return (super.print()+" "+getClan()+" "+getStatus());
+        return "\n"+"Название клана: "+getClan()+"\n"+"Звание: "+getStatus();
     }
 }
