@@ -11,7 +11,7 @@ public class Team7 extends Anime implements Printable {
         return ability;
     }
     @Override
-    public String print() {
-        return "\n"+"Способность: "+getAbility();
+    public void print() {
+        System.out.println(getName()+"\n"+"Способность: "+getAbility());
     }
 }

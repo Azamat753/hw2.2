@@ -20,8 +20,8 @@ public class Ninja  extends Anime implements Printable{
     }
 
     @Override
-    public String print() {
-        return "Имя:"+getName()+"\n"+ "Атака:"+getAttack()+"\n" + "Чакра: "+getChakra();
+    public void print() {
+        System.out.println( "Имя:"+getName()+"\n"+ "Атака:"+getAttack()+"\n" + "Чакра: "+getChakra());
     }
 
 }

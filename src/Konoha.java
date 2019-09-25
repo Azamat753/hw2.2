@@ -15,7 +15,7 @@ public class Konoha extends Anime implements Printable{
         return status;
     }
     @Override
-    public String print() {
-        return "\n"+"Название клана: "+getClan()+"\n"+"Звание: "+getStatus();
+    public void print() {
+        System.out.println(getName()+"\n"+"Название клана: "+getClan()+"\n"+"Звание: "+getStatus());
     }
 }

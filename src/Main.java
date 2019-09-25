@@ -1,31 +1,33 @@
 public  class Main {
 
     public static void main(String[] args) {
-        createObject("Ninja");
+        createObject("Ninja").print();
         System.out.println("__________________");
-        createObject("Konoha");
+        createObject("Konoha").print();
         System.out.println("___________________");
-        createObject("Team7");
+        createObject("Team7").print();
         System.out.println("___________________");
 
     }
-    public static String createObject(String className) {
-        switch (className){
+
+    public static Printable createObject(String className) {
+        Printable printable=null;
+        switch (className) {
             case "Ninja":
-                Ninja n1 = new Ninja(70,120);
-                System.out.println(n1.print());
+                printable = new Ninja(70, 120);
                 break;
             case "Konoha":
-                Konoha k1 =new Konoha("Uzumaki","Genin");
-                System.out.println(k1.getName()+k1.print());
+                printable = new Konoha("Uzumaki", "Genin");
                 break;
-            case  "Team7":
-                Team7 t7= new Team7("UseChakra");
-                System.out.println(t7.getName()+t7.print());
-                break;
-        }return className;
+            case "Team7":
+               printable = new Team7("UseChakra");
+               break;
+
+        }return printable;
+
     }
 }
+
 
 
 

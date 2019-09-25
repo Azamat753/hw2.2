@@ -1,4 +1,4 @@
 public interface Printable {
-    String print();
+    void print();
 }
 
